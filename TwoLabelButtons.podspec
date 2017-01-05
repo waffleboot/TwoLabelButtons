@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TwoLabelButtons'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TwoLabelButtons.'
+  s.summary          = 'List of buttons with two labels.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+List of buttons with two labels of different colors.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/TwoLabelButtons'
+  s.homepage         = 'https://github.com/waffleboot/TwoLabelButtons'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Andrei Yangabishev' => 'waffleboot@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/TwoLabelButtons.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/waffleboot/TwoLabelButtons.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -39,4 +39,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'PureLayout', '~> 3.0'
+    s.dependency 'UIView+TouchHighlighting', '~> 1.2' 
 end
