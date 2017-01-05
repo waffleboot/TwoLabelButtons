@@ -52,7 +52,6 @@ IB_DESIGNABLE
 - (void)setupDefaults {
   _firstLabel  = [TLBLabel new];
   _secondLabel = [TLBLabel new];
-  _firstLabel.text = @"dafdf";
   UIStackView *stack = [[UIStackView alloc] initWithFrame:CGRectZero];
   stack.axis = UILayoutConstraintAxisVertical;
   stack.alignment = UIStackViewAlignmentFill;
