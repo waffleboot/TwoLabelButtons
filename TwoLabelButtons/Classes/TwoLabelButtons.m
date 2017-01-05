@@ -1,5 +1,6 @@
 
 #import "TwoLabelButtons.h"
+#import "MTCompoundButton.h"
 #import "PureLayout.h"
 
 @interface TLBLabel : UILabel
@@ -11,11 +12,18 @@
 }
 @end
 
-@interface TLBButton () {
+IB_DESIGNABLE
+@interface TLBButton : MTCompoundButton {
 @private
   TLBLabel *_firstLabel;
   TLBLabel *_secondLabel;
 }
+@property (nonatomic) IBInspectable CGFloat  fontSize;
+@property (nonatomic) IBInspectable UIColor *firstColor;
+@property (nonatomic) IBInspectable UIColor *secondColor;
+@property (nonatomic) IBInspectable CGFloat  cornerRadius;
+@property (nonatomic) IBInspectable NSString *firstTitle;
+@property (nonatomic) IBInspectable NSString *secondTitle;
 @end
 
 @implementation TLBButton
