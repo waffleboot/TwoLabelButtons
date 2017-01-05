@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TwoLabelButtons_Example' do
+  pod 'TwoLabelButtons', :path => '../'
+
+  target 'TwoLabelButtons_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
